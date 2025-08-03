@@ -495,3 +495,7 @@ main {
         font-size: 0.95rem;
     }
 }
+
+.feature-box img.whit-icon {
+    filter: invert(91%) sepia(57%) saturate(2107%) hue-rotate(162deg) brightness(103%) contrast(101%);
+}
