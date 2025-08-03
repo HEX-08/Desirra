@@ -1,5 +1,15 @@
-/*====================== NAVBAR CUSTOM =========================*/
 
+
+body {
+    font-family: "Jost", serif;
+    min-height: 100vh;
+    background: #121212;
+    /* خلفية داكنة */
+    color: #E5E5E5;
+    /* لون نص أبيض ناعم */
+}
+
+/*====================== NAVBAR CUSTOM =========================*/
 
 .navbar {
     display: flex;
@@ -166,13 +176,6 @@
 /*====================== PRODUCTS CARD CUSTOM =========================*/
 
 /* إعداد عام */
-body {
-    background: #0A0A0A;
-    font-family: "Jost", sans-serif;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
 
 .section-title {
     text-align: center;
