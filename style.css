@@ -771,7 +771,7 @@ main {
 
 .footer-subscribe h4 {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: -75px;
     color: #eee;
     text-align: right;
 }
