@@ -116,7 +116,7 @@ body {
         align-items: flex-start;
         gap: 1.7rem !important;
         position: absolute;
-        height: auto;
+        height: 100vh;
         width: 250px;
         top: 0;
         right: 0;
