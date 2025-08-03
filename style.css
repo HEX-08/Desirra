@@ -476,4 +476,26 @@ main {
     color: #bcbcbc;
     line-height: 1.6;
 }
+.icon-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.icon-title img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(1.2);
+    flex-shrink: 0;
+}
+
+.icon-title h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #e3e3e3;
+    font-family: Arial, sans-serif;
+}
 
