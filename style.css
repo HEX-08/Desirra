@@ -423,7 +423,7 @@ main {
 
 .why-desirra {
     padding: 80px 20px;
-    background: #0f0f0f;
+    background: #0A0A0A;
     color: #fff;
     text-align: center;
 }
@@ -450,21 +450,11 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 0 transparent;
     border: 1px solid #333;
-    perspective: 1000px;
-    will-change: transform;
 }
 
 .feature-box:hover {
-    transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
+    transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
-}
-
-/* Touch effect on mobile */
-@media (hover: none) and (pointer: coarse) {
-    .feature-box:active {
-        transform: scale(0.97) rotateX(4deg) rotateY(-4deg);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    }
 }
 
 .feature-box img {
@@ -487,29 +477,3 @@ main {
     line-height: 1.6;
 }
 
-/* Responsive: Adjust layout for smaller screens */
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .feature-box {
-        width: 90%;
-        padding: 25px 20px;
-    }
-
-    .why-desirra h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
-
-    .feature-box h3 {
-        font-size: 1.2rem;
-    }
-
-    .feature-box p {
-        font-size: 0.95rem;
-    }
-}
