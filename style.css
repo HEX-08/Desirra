@@ -423,7 +423,7 @@ main {
 
 .why-desirra {
     padding: 80px 20px;
-    background: #0A0A0A;
+    background: #0f0f0f;
     color: #fff;
     text-align: center;
 }
@@ -450,11 +450,21 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 0 transparent;
     border: 1px solid #333;
+    will-change: transform;
+    transform-style: preserve-3d;
 }
 
 .feature-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    transform: perspective(800px) rotateX(8deg) rotateY(-8deg) translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Touch effect on mobile */
+@media (hover: none) and (pointer: coarse) {
+    .feature-box:active {
+        transform: perspective(800px) scale(0.97) rotateX(6deg) rotateY(-6deg);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .feature-box img {
@@ -475,5 +485,32 @@ main {
     font-size: 1rem;
     color: #bcbcbc;
     line-height: 1.6;
+}
+
+/* Responsive: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .feature-box {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .why-desirra h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .feature-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-box p {
+        font-size: 0.95rem;
+    }
 }
 
