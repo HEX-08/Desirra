@@ -658,7 +658,7 @@ main {
     font-family: 'Arial', sans-serif;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 -4px 30px rgba(0, 255, 255, 0.1);
-    border-radius: 25px;
+    border-radius: 45px;
 }
 
 .footer-container {
@@ -836,7 +836,7 @@ main {
         margin: 0;
         text-align: right;
         align-self: flex-end;
-        margin-top: -153px;
+        margin-top: -152px;
     }
 
     .footer-subscribe {
