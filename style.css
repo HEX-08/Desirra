@@ -500,14 +500,14 @@ main {
     }
 
     .feature-box h3 {
-        font-size: 0.95rem;
+        font-size: 1rem;
         margin-bottom: 6px;
         font-family: Arial, sans-serif;
         color: #00CFFF;
     }
 
     .feature-box p {
-        font-size: 1rem;
+        font-size: 0.85rem;
         color: #b0b0b0;
     }
 
