@@ -5,16 +5,16 @@
 }
 
 :root {
-    --primary-color: #7C3AED; /* بنفسجي نيون */
-    --secondary-color: #22D3EE; /* سماوي نيون */
-    --background-color: #0F172A; /* أزرق كحلي داكن */
-    --text-primary: #E0E7FF; /* أزرق فاتح جداً */
-    --text-secondary: #A5B4FC; /* أزرق فاتح متوسط */
-    --button-color: #EC4899; /* وردي نيون */
-    --button-hover: #9333EA; /* بنفسجي داكن */
-    --link-color: #3B82F6; /* أزرق نيون */
-    --link-hover: #F9A8D4; /* وردي فاتح */
-    --text-shadow-glow: rgba(124, 58, 174, 0.4); /* توهج بنفسجي أقل وضوحًا */
+    --primary-color: #00CFFF;  /* أزرق سماوي نيون */
+    --secondary-color: #121212; /* رمادي داكن جداً */
+    --background-color: #121212; /* خلفية داكنة */
+    --text-primary: #E5E5E5; /* أبيض ناعم */
+    --text-secondary: #B0B0B0; /* رمادي فاتح للنصوص الثانوية */
+    --button-color: #00CFFF; /* نفس اللون الأساسي */
+    --button-hover: #0099B3; /* أزرق سماوي داكن للهوفر */
+    --link-color: #00CFFF; /* أزرق سماوي */
+    --link-hover: #66D9FF; /* أزرق سماوي فاتح للهوفر */
+    --text-shadow-glow: rgba(0, 207, 255, 0.2); /* توهج أزرق خفيف */
 }
 
 body {
@@ -35,7 +35,7 @@ body {
     position: sticky;
     top: 0;
     background: transparent;
-    box-shadow: 0 10px 20px rgba(73, 72, 72, 0.5);
+    box-shadow: 0 10px 20px rgba(18, 18, 18, 0.5);
     backdrop-filter: blur(10px);
     z-index: 999;
 }
@@ -56,7 +56,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     font-style: italic;
-    text-shadow: 0 0 8px var(--text-shadow-glow);
+    text-shadow: 0 0 6px var(--text-shadow-glow);
 }
 
 .navbar-container .navbar-menu {
@@ -77,7 +77,7 @@ body {
     border: 2px solid transparent;
     white-space: nowrap;
     transition: color 0.3s ease;
-    text-shadow: 0 0 3px var(--text-shadow-glow);
+    text-shadow: 0 0 2px var(--text-shadow-glow);
 }
 
 .navbar-container .navbar-menu li a::after {
@@ -93,7 +93,7 @@ body {
 }
 
 .navbar-container .navbar-menu li a:hover {
-    color: var(--secondary-color);
+    color: var(--button-hover);
 }
 
 .navbar-container .navbar-menu li a:hover::after {
@@ -193,7 +193,7 @@ body {
     position: absolute;
     top: 20%;
     right: 0;
-    box-shadow: 0 0 700px 80px white;
+    box-shadow: 0 0 700px 80px #00cfff80;
     rotate: -30deg;
     z-index: -1;
 }
@@ -234,8 +234,8 @@ main {
 }
 
 .bubbles {
-    --c1: #212121;
-    --c2: var(--secondary-color);
+    --c1: #121212;
+    --c2: var(--primary-color);
     --size-letter: 20px;
 
     padding: 0.3em 0.6em;
@@ -310,7 +310,7 @@ main {
         position: absolute;
         top: 25%;
         right: 0;
-        box-shadow: 0 0 300px 10px white;
+        box-shadow: 0 0 300px 10px #00cfff80;
         rotate: -30deg;
         z-index: -1;
     }
@@ -374,13 +374,13 @@ main {
     width: 380px;
     transform: rotateY(-20deg) rotateX(10deg);
     transition: transform 0.6s ease;
-    filter: drop-shadow(0 20px 30px rgba(124, 58, 174, 0.6));
+    filter: drop-shadow(0 20px 30px rgba(0, 207, 255, 0.6));
     border-radius: 20px;
 }
 
 .vape-container img:hover {
     transform: rotateY(0deg) rotateX(0deg) scale(1.05);
-    filter: drop-shadow(0 25px 40px rgba(124, 58, 174, 0.9));
+    filter: drop-shadow(0 25px 40px rgba(0, 207, 255, 0.9));
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -399,13 +399,13 @@ main {
         width: 220px;
         transform: rotateY(-15deg) rotateX(7deg);
         transition: transform 0.6s ease;
-        filter: drop-shadow(0 10px 15px rgba(124, 58, 174, 0.6));
+        filter: drop-shadow(0 10px 15px rgba(0, 207, 255, 0.6));
         border-radius: 15px;
     }
 
     .vape-container img:hover {
         transform: rotateY(0deg) rotateX(0deg) scale(1.05);
-        filter: drop-shadow(0 15px 25px rgba(124, 58, 174, 0.9));
+        filter: drop-shadow(0 15px 25px rgba(0, 207, 255, 0.9));
     }
 }
 
@@ -424,7 +424,7 @@ main {
     font-family: 'Libertinus Serif', serif;
     margin-bottom: 50px;
     color: var(--primary-color);
-    text-shadow: 0 0 12px var(--text-shadow-glow);
+    text-shadow: 0 0 6px var(--text-shadow-glow);
 }
 
 .features {
@@ -436,13 +436,13 @@ main {
 
 .feature-box {
     position: relative;
-    background: #121212;
+    background: var(--background-color);
     padding: 30px 25px;
     border-radius: 16px;
     width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 15px rgba(124, 58, 174, 0.3);
-    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(0, 207, 255, 0.3);
+    border: 1px solid #222;
     will-change: transform;
     transform-style: preserve-3d;
     overflow: hidden;
@@ -451,14 +451,14 @@ main {
 
 .feature-box:hover {
     transform: perspective(800px) rotateX(8deg) rotateY(-8deg) translateY(-10px);
-    box-shadow: 0 20px 40px rgba(124, 58, 174, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 207, 255, 0.4);
 }
 
 /* Touch effect on mobile */
 @media (hover: none) and (pointer: coarse) {
     .feature-box:active {
         transform: perspective(800px) scale(0.97) rotateX(6deg) rotateY(-6deg);
-        box-shadow: 0 15px 30px rgba(124, 58, 174, 0.3);
+        box-shadow: 0 15px 30px rgba(0, 207, 255, 0.3);
     }
 }
 
@@ -475,6 +475,11 @@ main {
     font-family: Arial, sans-serif;
     color: var(--primary-color);
     text-shadow: none;
+    transition: color 0.3s ease;
+}
+
+.feature-box:hover h3 {
+    color: var(--button-hover);
 }
 
 .feature-box p {
@@ -519,7 +524,7 @@ main {
     height: 200%;
     background: radial-gradient(
         ellipse at top right,
-        rgba(124, 58, 174, 0.12) 0%,
+        rgba(0, 207, 255, 0.12) 0%,
         transparent 60%
     );
     pointer-events: none;
