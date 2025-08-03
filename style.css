@@ -113,8 +113,8 @@ body {
         align-items: flex-start;
         gap: 1.7rem !important;
         position: absolute;
-        height: 53vh;
-        width: 250px; /* عرض ثابت للقائمة */
+        height: 100vh;
+        width: 300px; /* عرض ثابت للقائمة */
         top: 0;
         right: 0;
         padding: 5rem 1.5rem;
