@@ -182,91 +182,111 @@ body {
 /*====================== PRODUCTS CARD CUSTOM =========================*/
 
 .products-section {
-    padding: 60px 20px;
+    padding: 70px 20px;
     background: #121212;
-    /* نفس خلفية الموقع */
     color: #E5E5E5;
     max-width: 1200px;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 5rem auto;
     font-family: "Jost", serif;
-}
-
-.section-title {
+  }
+  
+  .section-title {
     font-family: 'Libertinus Serif', serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: #00CFFF;
     text-align: center;
-    margin-bottom: 50px;
-    text-shadow: 0 0 10px #00CFFF;
+    margin-bottom: 60px;
+    text-shadow: 0 0 15px #00CFFF;
     font-style: italic;
-}
-
-.products-grid {
+    letter-spacing: 0.1rem;
+    user-select: none;
+  }
+  
+  .products-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-}
-
-.product-card {
-    background: #1e1e1e;
-    border-radius: 16px;
-    padding: 20px;
-    width: 280px;
-    box-shadow: 0 0 15px rgba(0, 207, 255, 0.3);
+    gap: 36px;
+  }
+  
+  .product-card {
+    background: linear-gradient(145deg, #1a1a1a, #222222);
+    border-radius: 24px;
+    width: 300px;
+    padding: 25px 20px 40px;
+    box-shadow:
+      0 4px 8px rgba(0, 207, 255, 0.1),
+      0 8px 20px rgba(0, 207, 255, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default;
-}
-
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 40px rgba(0, 207, 255, 0.6);
-}
-
-.product-img {
+    transition: transform 0.4s cubic-bezier(0.6, 0.2, 0.1, 1), box-shadow 0.4s ease;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-15px) rotateX(4deg) rotateY(-4deg);
+    box-shadow:
+      0 8px 16px rgba(0, 207, 255, 0.3),
+      0 20px 40px rgba(0, 207, 255, 0.6);
+  }
+  
+  .product-img-wrapper {
     width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #00CFFF66;
+    margin-bottom: 24px;
+    transition: transform 0.4s ease;
+  }
+  
+  .product-card:hover .product-img-wrapper {
+    transform: scale(1.05);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    box-shadow: 0 0 12px rgba(0, 207, 255, 0.4);
-}
-
-.product-name {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+  }
+  
+  .product-name {
+    font-size: 1.6rem;
     color: #E5E5E5;
+    margin-bottom: 25px;
     text-align: center;
-    font-weight: 600;
-}
-
-.btn-view-more {
-    padding: 10px 28px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 0 0 6px #00CFFF88;
+    user-select: none;
+  }
+  
+  .btn-view-more {
+    padding: 12px 36px;
+    font-size: 1.15rem;
+    font-weight: 700;
     color: #121212;
     background-color: #00CFFF;
     border: none;
     border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 0 15px #00CFFF;
+    box-shadow: 0 0 16px #00CFFFaa;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-view-more:hover {
+    user-select: none;
+  }
+  
+  .btn-view-more:hover {
     background-color: #0099bb;
-    box-shadow: 0 0 25px #0099bb;
-}
-
-/* استجابة الأجهزة الصغيرة */
-@media (max-width: 768px) {
+    box-shadow: 0 0 26px #0099bbcc;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 768px) {
     .products-grid {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-}
+  }
 
 /*====================== END OF PRODUCTS CARD CUSTOM =========================*/
