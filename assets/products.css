@@ -181,121 +181,108 @@ body {
 
 /*====================== PRODUCTS CARD CUSTOM =========================*/
 
-
-/* عنوان القسم */
-.products-title {
+.products-section {
+    padding: 50px 20px;
+    background-color: #121212;
     text-align: center;
-    font-size: 2.8rem;
+}
+
+.section-title {
+    font-size: 2.4rem;
     color: #00CFFF;
-    margin: 60px 0 40px;
-    letter-spacing: 1px;
+    font-family: 'Libertinus Serif', serif;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #00CFFF;
+    font-style: italic;
 }
 
-/* شبكة الكروت */
-.cards-container {
+.products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    padding: 0 40px 80px;
-    max-width: 1400px;
-    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* الكرت */
 .product-card {
-    perspective: 1000px;
-    transition: transform 0.4s ease;
+    background: linear-gradient(145deg, #1a1a1a, #222222);
+    border: 1px solid #00CFFF;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 0 0 transparent;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+    color: #E5E5E5;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .product-card:hover {
-    transform: rotateY(5deg) rotateX(3deg);
+    transform: translateY(-10px) rotateX(4deg);
+    box-shadow: 0 16px 32px rgba(0, 207, 255, 0.4), 0 0 12px #00CFFF88;
 }
 
-.card-glass {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-radius: 20px;
-    padding: 30px 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 25px rgba(0, 207, 255, 0.05);
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00CFFF33;
 }
 
-/* ضوء من الزاوية */
-.card-glass::before {
-    content: "";
-    position: absolute;
-    top: -30%;
-    right: -30%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(ellipse at top right, rgba(255, 255, 255, 0.08), transparent 60%);
-    z-index: 0;
-    pointer-events: none;
-}
-
-/* محتوى الكرت */
-.card-glass img {
-    width: 100px;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 10px 20px rgba(0, 207, 255, 0.3));
-    position: relative;
-    z-index: 1;
-}
-
-.card-glass h3 {
-    font-size: 1.3rem;
+.product-card h3 {
     color: #00CFFF;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 1;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
 }
 
-.card-glass p {
-    font-size: 0.95rem;
-    color: #bbb;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
+.product-card p {
+    color: #b0b0b0;
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    text-align: center;
 }
 
-/* زر View More */
-.btn-view {
-    display: inline-block;
-    padding: 10px 24px;
-    border-radius: 30px;
-    background: #00CFFF;
-    color: #000;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.9rem;
+.product-card button {
+    background-color: transparent;
+    color: #00CFFF;
+    border: 1px solid #00CFFF;
+    padding: 6px 16px;
+    border-radius: 22px;
+    cursor: pointer;
     transition: 0.3s ease;
-    position: relative;
-    z-index: 1;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.8rem;
 }
 
-.btn-view:hover {
-    background: #009abb;
-    color: #fff;
-    box-shadow: 0 0 10px #00CFFF;
+.product-card button:hover {
+    background-color: #00CFFF;
+    color: #000;
 }
 
-/* Responsive */
+/* Responsive tweaks */
 @media (max-width: 600px) {
-    .products-title {
-        font-size: 2rem;
+    .section-title {
+        font-size: 1.6rem;
     }
 
-    .btn-view {
-        font-size: 0.85rem;
-        padding: 8px 18px;
+    .product-card h3 {
+        font-size: 0.9rem;
     }
 
-    .card-glass img {
-        width: 80px;
+    .product-card p {
+        font-size: 0.75rem;
+    }
+
+    .product-card button {
+        font-size: 0.75rem;
+        padding: 5px 12px;
     }
 }
 
