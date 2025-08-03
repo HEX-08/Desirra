@@ -182,107 +182,120 @@ body {
 /*====================== PRODUCTS CARD CUSTOM =========================*/
 
 
-
-.section-title {
+/* عنوان القسم */
+.products-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin: 50px 0 30px;
+    font-size: 2.8rem;
     color: #00CFFF;
-    font-weight: bold;
+    margin: 60px 0 40px;
     letter-spacing: 1px;
 }
 
-/* شبكة المنتجات */
-.products-container {
+/* شبكة الكروت */
+.cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     padding: 0 40px 80px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: auto;
 }
 
 /* الكرت */
 .product-card {
-    background: #121212;
+    perspective: 1000px;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover {
+    transform: rotateY(5deg) rotateX(3deg);
+}
+
+.card-glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border-radius: 20px;
-    overflow: hidden;
     padding: 30px 20px;
     text-align: center;
     position: relative;
-    box-shadow: 0 0 30px rgba(0, 207, 255, 0.05);
-    border: 1px solid #1f1f1f;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 207, 255, 0.05);
 }
 
-.product-card::before {
+/* ضوء من الزاوية */
+.card-glass::before {
     content: "";
     position: absolute;
-    top: -50%;
-    right: -50%;
+    top: -30%;
+    right: -30%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(ellipse at top right, rgba(255, 255, 255, 0.1), transparent 70%);
+    background: radial-gradient(ellipse at top right, rgba(255, 255, 255, 0.08), transparent 60%);
     z-index: 0;
     pointer-events: none;
 }
 
-.product-card img {
-    width: 100%;
-    max-width: 200px;
+/* محتوى الكرت */
+.card-glass img {
+    width: 100px;
     margin-bottom: 20px;
-    z-index: 1;
+    filter: drop-shadow(0 10px 20px rgba(0, 207, 255, 0.3));
     position: relative;
-    filter: drop-shadow(0 10px 20px rgba(0, 207, 255, 0.2));
+    z-index: 1;
 }
 
-.product-title {
+.card-glass h3 {
     font-size: 1.3rem;
-    margin-bottom: 15px;
     color: #00CFFF;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-glass p {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-bottom: 20px;
     position: relative;
     z-index: 1;
 }
 
 /* زر View More */
-.view-more-btn {
+.btn-view {
     display: inline-block;
-    padding: 10px 22px;
+    padding: 10px 24px;
     border-radius: 30px;
     background: #00CFFF;
     color: #000;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
     position: relative;
     z-index: 1;
 }
 
-.view-more-btn:hover {
-    background: #00a6cc;
+.btn-view:hover {
+    background: #009abb;
     color: #fff;
     box-shadow: 0 0 10px #00CFFF;
 }
 
-.product-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(0, 207, 255, 0.2);
-}
-
 /* Responsive */
 @media (max-width: 600px) {
-    .section-title {
+    .products-title {
         font-size: 2rem;
     }
 
-    .product-title {
-        font-size: 1.1rem;
-    }
-
-    .view-more-btn {
+    .btn-view {
         font-size: 0.85rem;
         padding: 8px 18px;
+    }
+
+    .card-glass img {
+        width: 80px;
     }
 }
 
