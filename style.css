@@ -658,6 +658,7 @@ main {
     font-family: 'Arial', sans-serif;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 -4px 30px rgba(0, 255, 255, 0.1);
+    border-radius: 25px;
 }
 
 .footer-container {
@@ -671,7 +672,7 @@ main {
 
 .footer-logo h2 {
     font-family: 'Libertinus Serif', serif;
-    font-size: 28px;
+    font-size: 45px;
     color: #00f7ff;
     margin-bottom: 10px;
 }
