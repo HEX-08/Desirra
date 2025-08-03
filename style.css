@@ -759,3 +759,62 @@ main {
         margin-left: 0;
     }
 }
+
+.footer-subscribe {
+    min-width: 250px;
+  }
+  
+  .footer-subscribe h4 {
+    color: #eee;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .footer-subscribe form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-subscribe input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+  }
+  
+  .footer-subscribe input::placeholder {
+    color: #aaa;
+  }
+  
+  .footer-subscribe button {
+    padding: 10px;
+    background-color: #00f7ff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .footer-subscribe button:hover {
+    background-color: #00d6e0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-subscribe {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-subscribe form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-subscribe input, .footer-subscribe button {
+      width: 90%;
+    }
+  }
