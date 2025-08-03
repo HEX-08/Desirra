@@ -619,3 +619,23 @@ main {
         font-size: 0.75rem;
     }
 }
+
+@media (min-width: 880px) {
+    .product-card {
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .product-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+    }
+
+    .product-card button {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+}
