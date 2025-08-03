@@ -240,8 +240,8 @@ main {
 
     overflow: hidden;
 
-    position: fixed;
-    bottom: 17rem;
+    position: relative;
+    bottom: 12rem;
     left: 4.2rem;
     transition: 300ms cubic-bezier(0.83, 0, 0.17, 1);
 }
