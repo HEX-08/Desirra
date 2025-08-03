@@ -10,3 +10,5 @@ navbarToggle.addEventListener('click', () => {
 
 
 
+//================= PRODUCRTS GALLERY SECTION ======================//
+
