@@ -519,9 +519,9 @@ main {
 }
 
 .whit-icon {
-    filter: invert(1) brightness(2);
-    mix-blend-mode: screen;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) drop-shadow(0 0 6px #ffffffaa);
 }
+
 /*========================= END OF WHY DESIRRA SECTION =================================*/
 
 
