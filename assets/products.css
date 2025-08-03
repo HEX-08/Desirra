@@ -206,14 +206,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 36px;
+    gap: 30px;
 }
 
 .product-card {
     background: linear-gradient(145deg, #1a1a1a, #222222);
-    border-radius: 24px;
-    width: 300px;
-    padding: 25px 20px 40px;
+    border-radius: 22px;
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: 260px;
+    padding: 22px 18px 36px;
     box-shadow:
         0 4px 8px rgba(0, 207, 255, 0.1),
         0 8px 20px rgba(0, 207, 255, 0.2);
@@ -223,22 +224,23 @@ body {
     transition: transform 0.4s cubic-bezier(0.6, 0.2, 0.1, 1), box-shadow 0.4s ease;
     cursor: pointer;
     perspective: 1000px;
+    min-height: 420px;
 }
 
 .product-card:hover {
-    transform: translateY(-15px) rotateX(4deg) rotateY(-4deg);
+    transform: translateY(-15px) rotateX(6deg);
     box-shadow:
-        0 8px 16px rgba(0, 207, 255, 0.3),
-        0 20px 40px rgba(0, 207, 255, 0.6);
+        0 10px 22px rgba(0, 207, 255, 0.25),
+        0 20px 40px rgba(0, 207, 255, 0.5);
 }
 
 .product-img-wrapper {
     width: 100%;
-    height: 220px;
-    border-radius: 20px;
+    height: 180px;
+    border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 0 20px #00CFFF66;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     transition: transform 0.4s ease;
 }
 
@@ -253,9 +255,9 @@ body {
 }
 
 .product-name {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #E5E5E5;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: center;
     font-weight: 700;
     text-shadow: 0 0 6px #00CFFF88;
@@ -263,43 +265,47 @@ body {
 }
 
 .btn-view-more {
-    padding: 12px 36px;
-    font-size: 1.15rem;
+    padding: 10px 28px;
+    font-size: 1rem;
     font-weight: 700;
     color: #121212;
     background-color: #00CFFF;
     border: none;
     border-radius: 30px;
-    box-shadow: 0 0 16px #00CFFFaa;
+    box-shadow: 0 0 14px #00CFFFaa;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     user-select: none;
 }
 
 .btn-view-more:hover {
     background-color: #0099bb;
-    box-shadow: 0 0 26px #0099bbcc;
+    box-shadow: 0 0 24px #0099bbcc;
 }
 
-/* Responsive */
-
+/* ✅ Responsive – خلي 3 كروت في الجوال أيضاً */
 @media (max-width: 768px) {
+    .products-grid {
+        gap: 20px;
+    }
+
     .product-card {
-        width: 90%;
-        padding: 18px 16px 28px;
-        min-height: unset; /* خليه يتأقلم تلقائي */
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: 100%;
+        padding: 18px 14px 30px;
+        min-height: auto;
     }
 
     .product-img-wrapper {
-        height: 160px;
+        height: 150px;
     }
 
     .product-name {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .btn-view-more {
-        padding: 10px 28px;
-        font-size: 1rem;
+        padding: 8px 20px;
+        font-size: 0.9rem;
     }
 }
 
