@@ -698,7 +698,7 @@ main {
     margin-bottom: 10px;
 }
 
-.footer-links{
+.footer-links {
     margin-right: 40px;
 }
 
@@ -808,3 +808,59 @@ main {
     background: #00d6e0;
 }
 
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        order: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        order: 1;
+        width: 45%;
+        margin: 0;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .footer-resources {
+        order: 2;
+        width: 45%;
+        margin: 0;
+        text-align: right;
+        align-self: flex-end;
+    }
+
+    .footer-subscribe {
+        order: 3;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .footer-subscribe h4 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-subscribe form {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-subscribe input {
+        width: 70%;
+        margin-top: 0;
+    }
+
+    .footer-subscribe button {
+        margin-top: 0;
+    }
+}
