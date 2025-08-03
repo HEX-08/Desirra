@@ -418,3 +418,63 @@ main {
 
 
 
+/*============================== WHY DESIRRA SECTION =================================*/
+
+
+.why-desirra {
+    padding: 100px 20px;
+    background: #111;
+    /* خلفية داكنة أنيقة */
+    color: #fff;
+    text-align: center;
+}
+
+.why-desirra .section-title {
+    font-size: 3rem;
+    font-family: 'Libertinus Serif', serif;
+    margin-bottom: 10px;
+}
+
+.why-desirra .section-subtitle {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.feature {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Libertinus Serif', serif;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+}
