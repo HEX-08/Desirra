@@ -24,7 +24,7 @@ body {
     top: 0;
     background: transparent;
     box-shadow: 0 10px 20px rgba(18, 18, 18, 0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     z-index: 999;
 }
 
