@@ -718,4 +718,39 @@ main {
     color: #888;
 }
 
+.footer-resources {
+    margin-left: -40px;
+    /* قربها من اللوجو */
+}
 
+.footer-resources h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #eee;
+}
+
+.footer-resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-resources ul li {
+    margin-bottom: 10px;
+}
+
+.footer-resources ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-resources ul li a:hover {
+    color: #00f7ff;
+}
+
+/* Responsive تعديل بسيط */
+@media (max-width: 768px) {
+    .footer-resources {
+        margin-left: 0;
+    }
+}
