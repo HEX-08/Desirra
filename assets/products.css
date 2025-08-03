@@ -283,9 +283,23 @@ body {
 /* Responsive */
 
 @media (max-width: 768px) {
-    .products-grid {
-        flex-direction: column;
-        align-items: center;
+    .product-card {
+        width: 90%;
+        padding: 18px 16px 28px;
+        min-height: unset; /* خليه يتأقلم تلقائي */
+    }
+
+    .product-img-wrapper {
+        height: 160px;
+    }
+
+    .product-name {
+        font-size: 1.3rem;
+    }
+
+    .btn-view-more {
+        padding: 10px 28px;
+        font-size: 1rem;
     }
 }
 
