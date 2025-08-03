@@ -181,91 +181,103 @@ body {
 
 /*====================== PRODUCTS CARD CUSTOM =========================*/
 
+.products-section {
+    padding: 70px 20px;
+    background: #121212;
+    color: #E5E5E5;
+    max-width: 1200px;
+    margin: 0 auto 5rem auto;
+    font-family: "Jost", serif;
+}
+
+.section-title {
+    font-family: 'Libertinus Serif', serif;
+    font-size: 3rem;
+    color: #00CFFF;
+    text-align: center;
+    margin-bottom: 60px;
+    text-shadow: 0 0 15px #00CFFF;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    user-select: none;
+}
+
 .products-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 28px;
+    gap: 36px;
 }
 
 .product-card {
     background: linear-gradient(145deg, #1a1a1a, #222222);
-    border-radius: 22px;
-    width: 260px;
-    /* حجم وسط */
-    padding: 22px 18px 36px;
+    border-radius: 24px;
+    width: 300px;
+    padding: 25px 20px 40px;
     box-shadow:
-        0 6px 18px rgba(0, 207, 255, 0.15),
-        0 12px 28px rgba(0, 207, 255, 0.25);
+        0 4px 8px rgba(0, 207, 255, 0.1),
+        0 8px 20px rgba(0, 207, 255, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1), box-shadow 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.6, 0.2, 0.1, 1), box-shadow 0.4s ease;
     cursor: pointer;
-    perspective: 1200px;
-    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .product-card:hover {
-    /* الميل للأمام فقط، بدون انحراف يمين/يسار */
-    transform: translateY(-18px) rotateX(12deg) translateZ(20px);
+    transform: translateY(-15px) rotateX(4deg) rotateY(-4deg);
     box-shadow:
-        0 14px 32px rgba(0, 207, 255, 0.4),
-        0 26px 52px rgba(0, 207, 255, 0.7);
+        0 8px 16px rgba(0, 207, 255, 0.3),
+        0 20px 40px rgba(0, 207, 255, 0.6);
 }
 
 .product-img-wrapper {
     width: 100%;
-    height: 180px;
+    height: 220px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 25px #00CFFF88;
-    margin-bottom: 22px;
+    box-shadow: 0 0 20px #00CFFF66;
+    margin-bottom: 24px;
     transition: transform 0.4s ease;
-    transform-style: preserve-3d;
 }
 
 .product-card:hover .product-img-wrapper {
-    transform: scale(1.07) translateZ(25px);
+    transform: scale(1.05);
 }
 
 .product-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    backface-visibility: hidden;
 }
 
 .product-name {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #E5E5E5;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
     text-align: center;
     font-weight: 700;
-    text-shadow: 0 0 10px #00CFFFaa;
+    text-shadow: 0 0 6px #00CFFF88;
     user-select: none;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
 }
 
 .btn-view-more {
-    padding: 11px 32px;
-    font-size: 1.05rem;
+    padding: 12px 36px;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #121212;
     background-color: #00CFFF;
     border: none;
     border-radius: 30px;
-    box-shadow: 0 0 18px #00CFFFbb;
+    box-shadow: 0 0 16px #00CFFFaa;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     user-select: none;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
 }
 
 .btn-view-more:hover {
     background-color: #0099bb;
-    box-shadow: 0 0 28px #0099bbcc;
+    box-shadow: 0 0 26px #0099bbcc;
 }
 
 /* Responsive */
@@ -277,15 +289,4 @@ body {
     }
 }
 
-.products-title {
-    font-size: 3rem;
-    font-family: 'Libertinus Serif', serif;
-    color: #00CFFF;
-    text-align: center;
-    margin-bottom: 3.5rem;
-    text-shadow: 0 0 10px #00CFFF;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    user-select: none;
-}
 /*====================== END OF PRODUCTS CARD CUSTOM =========================*/
