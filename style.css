@@ -785,6 +785,7 @@ main {
     font-size: 14px;
     width: 180px;
     outline: none;
+    margin-top: -80px;
 }
 
 .footer-subscribe input::placeholder {
