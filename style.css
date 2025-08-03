@@ -481,7 +481,6 @@ main {
 }
 
 /* Responsive adjustments */
-
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
@@ -492,6 +491,7 @@ main {
     .feature-box {
         width: 90%;
         padding: 25px 20px;
+        margin: 0 auto;
     }
 
     .why-desirra h2 {
@@ -506,10 +506,6 @@ main {
     .feature-box p {
         font-size: 0.95rem;
     }
-}
-
-.feature-box img.whit-icon {
-    filter: brightness(100%) invert(100%);
 }
 
 /*========================= END OF WHY DESIRRA SECTION =================================*/
