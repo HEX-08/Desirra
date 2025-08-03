@@ -104,7 +104,7 @@ body {
 
 @media (max-width:880px) {
     .navbar {
-        backdrop-filter: none;
+        backdrop-filter: blur(10px);
     }
 
     .navbar-container .navbar-menu {
