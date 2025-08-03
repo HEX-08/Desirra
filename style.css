@@ -698,6 +698,10 @@ main {
     margin-bottom: 10px;
 }
 
+.footer-links{
+    margin-right: ;
+}
+
 .footer-links ul li a {
     color: #ccc;
     text-decoration: none;
