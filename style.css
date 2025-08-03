@@ -708,17 +708,6 @@ main {
     color: #00f7ff;
 }
 
-.footer-social .social-icons a {
-    color: #ccc;
-    font-size: 20px;
-    margin-right: 15px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer-social .social-icons a:hover {
-    color: #00f7ff;
-    transform: scale(1.1);
-}
 
 .footer-bottom {
     text-align: center;
@@ -729,15 +718,4 @@ main {
     color: #888;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .footer-social .social-icons a {
-        margin-right: 10px;
-    }
-}
