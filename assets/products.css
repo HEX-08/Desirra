@@ -192,7 +192,7 @@ body {
 .product-card {
     background: linear-gradient(145deg, #1a1a1a, #222222);
     border-radius: 20px;
-    width: 220px;
+    width: 300px;
     /* صغر الحجم */
     padding: 20px 16px 32px;
     box-shadow:
