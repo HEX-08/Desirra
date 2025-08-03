@@ -766,12 +766,11 @@ main {
     align-items: flex-end;
     justify-content: center;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 70px;
 }
 
 .footer-subscribe h4 {
     font-size: 16px;
-    margin-bottom: -540px;
     color: #eee;
     text-align: right;
 }
