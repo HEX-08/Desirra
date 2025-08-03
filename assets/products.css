@@ -191,27 +191,26 @@ body {
     text-shadow: 0 0 10px rgba(0, 207, 255, 0.3);
 }
 
-/* ====== شبكة المنتجات ====== */
 .products-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 40px;
-    padding: 0 40px 100px;
-    max-width: 1300px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 0 30px 100px;
+    max-width: 1200px;
     margin: auto;
+    justify-content: center;
 }
 
-/* ====== تصميم الكرت ====== */
 .product-card {
     background: linear-gradient(145deg, #111111, #0f0f0f);
     border: 1px solid #1c1c1c;
-    border-radius: 18px;
-    overflow: hidden;
-    padding: 30px 20px;
+    border-radius: 16px;
+    padding: 25px 15px;
     text-align: center;
     position: relative;
-    box-shadow: 0 0 40px rgba(0, 207, 255, 0.05);
+    box-shadow: 0 0 30px rgba(0, 207, 255, 0.05);
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .product-card::before {
@@ -231,7 +230,6 @@ body {
     box-shadow: 0 15px 50px rgba(0, 207, 255, 0.2);
 }
 
-/* ====== صورة المنتج ====== */
 .product-card img {
     width: 100%;
     max-width: 200px;
@@ -241,7 +239,6 @@ body {
     z-index: 1;
 }
 
-/* ====== عنوان المنتج ====== */
 .product-title {
     font-size: 1.3rem;
     font-weight: bold;
@@ -251,7 +248,6 @@ body {
     z-index: 1;
 }
 
-/* ====== زر View More ====== */
 .btn-view {
     display: inline-block;
     margin-top: 10px;
@@ -273,7 +269,6 @@ body {
     box-shadow: 0 0 10px #00CFFF;
 }
 
-/* ====== Responsive ====== */
 @media (max-width: 600px) {
     .section-title {
         font-size: 2rem;
