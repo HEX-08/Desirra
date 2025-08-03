@@ -116,7 +116,7 @@ body {
         align-items: flex-start;
         gap: 1.7rem !important;
         position: absolute;
-        height: 100vh;
+        height: auto;
         width: 250px;
         top: 0;
         right: 0;
@@ -155,7 +155,6 @@ body {
         padding: 0 1rem;
     }
 
-    .nav
 
     .navbar-logo {
         font-size: 1.7rem;
