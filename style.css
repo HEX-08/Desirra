@@ -23,7 +23,7 @@ body {
     top: 0;
     background: transparent;
     box-shadow: 0 10px 20px rgba(0, 207, 255, 0.2); /* ظل أزرق سماوي نيون */
-    blur
+    backdrop-filter: blur(20px);
     z-index: 999;
 }
 
