@@ -490,21 +490,31 @@ main {
 
     .feature-box {
         width: 90%;
-        padding: 25px 20px;
+        padding: 12px 15px;
         margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 207, 255, 0.05);
+        background: #1e1e1e;
+        border: 1px solid #00CFFF;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-box h3 {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+        font-family: Arial, sans-serif;
+        color: #00CFFF;
+    }
+
+    .feature-box p {
+        font-size: 0.85rem;
+        color: #b0b0b0;
     }
 
     .why-desirra h2 {
         font-size: 2rem;
         margin-bottom: 30px;
-    }
-
-    .feature-box h3 {
-        font-size: 1.2rem;
-    }
-
-    .feature-box p {
-        font-size: 0.95rem;
+        color: #00CFFF;
     }
 }
 
