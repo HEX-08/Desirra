@@ -518,8 +518,8 @@ main {
     }
 }
 
-.whit-icon {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) drop-shadow(0 0 6px #ffffffaa);
+.feature-box .whit-icon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
 }
 
 /*========================= END OF WHY DESIRRA SECTION =================================*/
