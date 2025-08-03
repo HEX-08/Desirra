@@ -772,6 +772,7 @@ main {
     margin-bottom: 10px;
     color: #eee;
     text-align: right;
+    font-weight: bold;
 }
 
 .footer-subscribe form {
