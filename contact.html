@@ -192,7 +192,8 @@
                     <span>Dubai, United Arab Emirates</span>
                 </div>
             </section>
-            <form class="contact-form" action="https://formspree.io/f/mgvzlrea" method="POST" onsubmit="return showThankYou()" data-aos="fade-up" data-aos-delay="100">
+            <form class="contact-form" action="https://formspree.io/f/mgvzlrea" method="POST" data-aos="fade-up" data-aos-delay="100">
+                <input type="hidden" name="_redirect" value="thankyou.html" />
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required placeholder="Enter your email" />
 
@@ -204,13 +205,6 @@
         </div>
     </main>
 
-
-    <script>
-        function showThankYou() {
-            alert("Thank you for contacting us! We'll get back to you soon.");
-            return true;
-        }
-    </script>
 
 </body>
 
