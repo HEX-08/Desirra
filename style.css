@@ -663,7 +663,7 @@ main {
     overflow: hidden;
 
     position: relative;
-    bottom: 13.1rem;
+    bottom: -1rem;
     left: 4.2rem;
     transition: 300ms cubic-bezier(0.83, 0, 0.17, 1);
 }
