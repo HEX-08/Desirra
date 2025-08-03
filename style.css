@@ -752,3 +752,86 @@ main {
 .footer-resources ul li a:hover {
     color: #00f7ff;
 }
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    min-width: 200px;
+}
+
+.footer-subscribe h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #eee;
+    text-align: right;
+}
+
+.footer-subscribe form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-subscribe input {
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    width: 180px;
+    outline: none;
+}
+
+.footer-subscribe input::placeholder {
+    color: #aaa;
+}
+
+.footer-subscribe button {
+    padding: 8px 12px;
+    background: #00f7ff;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-subscribe button:hover {
+    background: #00d6e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-subscribe {
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer-subscribe form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-subscribe input,
+    .footer-subscribe button {
+        width: 90%;
+    }
+
+    .footer-subscribe h4 {
+        text-align: center;
+    }
+}
