@@ -104,7 +104,7 @@ body {
 
 @media (max-width:880px) {
     .navbar {
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(90px);
     }
 
     .navbar-container .navbar-menu {
@@ -120,8 +120,8 @@ body {
         padding: 5rem 1.5rem;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(40px); /* بلور واضح على القائمة فقط */
-        background: rgba(18, 18, 18, 0.6); /* خلفية شفافة جزئيًا */
-        border-radius: 0 0 0 15px; /* زاوية مدورة على اليسار فقط */
+        background: rgba(18, 18, 18, 0.9); /* خلفية شفافة جزئيًا */
+        border-radius: 0 0 0 15px; 
     }
 
     .navbar-container .navbar-menu.active {
