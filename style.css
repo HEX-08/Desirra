@@ -7,8 +7,7 @@
 body {
     font-family: "Jost", serif;
     min-height: 100vh;
-    background: #121212;
-    color: #E5E5E5;
+    background: #0A0A0A;
 }
 
 
@@ -41,7 +40,7 @@ body {
 .navbar-logo {
     font-size: 2rem;
     font-weight: 600;
-    color: #00CFFF;
+    color: #A873E8;
     text-decoration: none;
     cursor: pointer;
     font-style: italic;
