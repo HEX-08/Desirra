@@ -114,13 +114,14 @@ body {
         gap: 1.7rem !important;
         position: absolute;
         height: 100vh;
-        width: 250px;
+        width: 250px; /* عرض ثابت للقائمة */
         top: 0;
         right: 0;
         padding: 5rem 1.5rem;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(10px);
-        background: #121212;
+        backdrop-filter: blur(40px); /* بلور واضح على القائمة فقط */
+        background: rgba(18, 18, 18, 0.6); /* خلفية شفافة جزئيًا */
+        border-radius: 0 0 0 15px; /* زاوية مدورة على اليسار فقط */
     }
 
     .navbar-container .navbar-menu.active {
@@ -144,6 +145,8 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
 
 @media (max-width: 480px) {
     .navbar-container {
