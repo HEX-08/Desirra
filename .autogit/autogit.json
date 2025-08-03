@@ -1,0 +1,13 @@
+{
+  "updateInterval": 30,
+  "autoPush": true,
+  "autoCommit": true,
+  "autoAdd": true,
+  "commitMessage": "Auto update",
+  "branch": "main",
+  "runOnStart": true,
+  "logging": true,
+  "silent": true,
+  "locale": "en-US",
+  "timeZone": "Europe/Berlin"
+}
