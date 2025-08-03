@@ -502,7 +502,8 @@ main {
 
     .why-desirra h2 {
         font-size: 2rem;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        padding-top: 120px;
     }
 
     .feature-box h3 {
