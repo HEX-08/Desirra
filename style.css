@@ -806,32 +806,3 @@ main {
     background: #00d6e0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-subscribe {
-        align-items: center;
-        margin: 0;
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .footer-subscribe form {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer-subscribe input,
-    .footer-subscribe button {
-        width: 90%;
-    }
-
-    .footer-subscribe h4 {
-        text-align: center;
-    }
-}
