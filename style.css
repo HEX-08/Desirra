@@ -759,7 +759,7 @@ main {
     justify-content: center;
     align-items: flex-end;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 40px;
     min-width: 200px;
 }
 
