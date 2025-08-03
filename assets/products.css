@@ -277,5 +277,15 @@ body {
     }
 }
 
-
+.products-title {
+    font-size: 3rem;
+    font-family: 'Libertinus Serif', serif;
+    color: #00CFFF;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    text-shadow: 0 0 10px #00CFFF;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
 /*====================== END OF PRODUCTS CARD CUSTOM =========================*/
