@@ -287,8 +287,8 @@ body {
     }
 
     .product-card {
-        width: calc(33.33% - 14px);
-        padding: 16px;
+        border-radius: 12px;
+        padding: 10px;
     }
 
     .product-name {
