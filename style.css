@@ -7,7 +7,7 @@
 body {
     font-family: "Jost", serif;
     min-height: 100vh;
-    background: radial-gradient(ellipse at top left, #0A0A0A 0%, #090909 50%, #050505 100%);
+    background: #0A0A0A;
 }
 
 
@@ -40,9 +40,7 @@ body {
 .navbar-logo {
     font-size: 2rem;
     font-weight: 600;
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #A873E8;
     text-decoration: none;
     cursor: pointer;
     font-style: italic;
@@ -59,7 +57,7 @@ body {
 .navbar-container .navbar-menu li a {
     position: relative;
     text-decoration: none;
-    color: #fff;
+    color: #A873E8;
     font-size: 1.3rem;
     font-weight: 500;
     padding: 3px 20px;
@@ -77,13 +75,13 @@ body {
     bottom: 4px;
     /* خط تحت النص قليلاً */
     left: 0;
-    background: linear-gradient(to right, #ff4ecd, #5be5ff);
+    background-color: #8B60C4;
     transition: width 0.3s ease;
     border-radius: 2px;
 }
 
 .navbar-container .navbar-menu li a:hover {
-    color: #ff4ecd;
+    color: #8B60C4;
 }
 
 .navbar-container .navbar-menu li a:hover::after {
@@ -213,9 +211,7 @@ main {
     margin-bottom: 9rem;
     line-height: 1.2;
     text-shadow: 0 0 10px rgba(72, 70, 70, 0.418);
-    background: linear-gradient(120deg, #ff4ecd, #5be5ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
     font-style: italic;
 }
 
@@ -223,7 +219,7 @@ main {
     font-size: 1.2rem;
     letter-spacing: 0.05rem;
     max-width: 35rem;
-    color: #d0d0d0;
+    color: #7a7a7a;
     margin: 2rem -5rem;
     margin-top: -9rem;
     line-height: 1.6;
@@ -231,7 +227,7 @@ main {
 
 .bubbles {
     --c1: #212121;
-    --c2: #ff4ecd;
+    --c2: #8685ef;
     --size-letter: 20px;
 
     padding: 0.3em 0.6em;
@@ -344,9 +340,7 @@ main {
         margin-top: 10rem;
         line-height: 1.3;
         text-shadow: 0 0 6px rgba(72, 70, 70, 0.3);
-        background: linear-gradient(120deg, #ff4ecd, #5be5ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #FFFFFF;
         font-style: italic;
     }
 
@@ -354,7 +348,7 @@ main {
         font-size: 1rem;
         letter-spacing: 0.03rem;
         max-width: 100%;
-        color: #d0d0d0;
+        color: #7a7a7a;
         margin: 1rem 0;
         margin-bottom: -13rem;
     }
@@ -439,9 +433,7 @@ main {
     font-size: 2.5rem;
     font-family: 'Libertinus Serif', serif;
     margin-bottom: 50px;
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
 }
 
 .features {
@@ -452,13 +444,13 @@ main {
 }
 
 .feature-box {
-    background: linear-gradient(135deg, #1a1a1a, #111111);
+    background: #1a1a1a;
     padding: 30px 25px;
     border-radius: 16px;
     width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 0 transparent;
-    border: 1px solid #444;
+    border: 1px solid #333;
     will-change: transform;
     transform-style: preserve-3d;
 }
@@ -487,12 +479,12 @@ main {
     font-size: 1.4rem;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
-    color: #ffffff;
+    color: #e3e3e3;
 }
 
 .feature-box p {
     font-size: 1rem;
-    color: #d0d0d0;
+    color: #bcbcbc;
     line-height: 1.6;
 }
 
@@ -512,9 +504,6 @@ main {
     .why-desirra h2 {
         font-size: 2rem;
         margin-bottom: 30px;
-        background: linear-gradient(90deg, #ff8a00, #e52e71);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .feature-box h3 {
@@ -525,3 +514,4 @@ main {
         font-size: 0.95rem;
     }
 }
+
