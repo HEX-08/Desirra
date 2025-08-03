@@ -578,7 +578,7 @@ body {
     position: sticky;
     top: 0;
     background: transparent;
-    box-shadow: 0 10px 20px rgba(0, 207, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(73, 72, 72, 0.5);
     backdrop-filter: blur(10px);
     z-index: 999;
 }
