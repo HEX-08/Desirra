@@ -515,3 +515,34 @@ main {
     }
 }
 
+.feature-box {
+    position: relative; /* ضروري عشان نقدر نستخدم ::before */
+    background: #1a1a1a;
+    padding: 30px 25px;
+    border-radius: 16px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+    border: 1px solid #333;
+    will-change: transform;
+    transform-style: preserve-3d;
+    overflow: hidden; /* يمنع تسرب الضوء للخارج */
+}
+
+.feature-box::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        ellipse at top right,
+        rgba(255, 255, 255, 0.12) 0%,
+        transparent 60%
+    );
+    pointer-events: none;
+    mix-blend-mode: screen;
+    z-index: 0;
+}
+
