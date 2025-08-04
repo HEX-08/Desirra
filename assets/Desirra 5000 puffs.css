@@ -279,3 +279,43 @@ body {
 }
 
 
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #B0B0B0;
+    margin: 30px 20px 10px;
+    font-family: "Jost", sans-serif;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #00CFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #0099bb;
+}
+
+.breadcrumb-icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) saturate(100%) invert(85%) sepia(16%) saturate(3904%) hue-rotate(161deg) brightness(98%) contrast(94%);
+}
+
+.breadcrumb-separator {
+    color: #555;
+    font-size: 1rem;
+}
+
+.breadcrumb-current {
+    color: #E5E5E5;
+    font-weight: 500;
+}
