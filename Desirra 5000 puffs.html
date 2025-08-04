@@ -34,14 +34,28 @@
 
     <!--================================= END OF NAVBAR ==========================================-->
 
-    <section class="product-3d">
-        <div class="product-3d-container">
-            <img src="imgs/imgs previw/Desirra.png" alt="Desirra Product">
-            <h2 class="product-title">Desirra Arctic Blue</h2>
-            <p class="product-desc">
-                Bold. Smooth. Unforgettable. Experience next-level design and flavor.
-            </p>
-            <a href="contact.html" class="btn-contact">Contact to Order</a>
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <div class="product-image">
+                <img src="imgs/imgs previw/Desirra.png" alt="Desirra Product">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Desirra Arctic Blue</h1>
+                <p class="product-desc">
+                    Desirra Arctic Blue delivers a bold and smooth vaping experience with icy freshness and a premium
+                    feel.
+                </p>
+                <div class="flavor-info">
+                    <h4>Flavor Available In</h4>
+                    <div class="nic-levels">
+                        <span>0mg</span>
+                        <span>3mg</span>
+                        <span>6mg</span>
+                        <span>12mg</span>
+                        <span>18mg</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -50,9 +64,16 @@
 
 
 
-
     <SCript>
-        
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarToggle.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+        })
+
+
     </SCript>
 </body>
 
