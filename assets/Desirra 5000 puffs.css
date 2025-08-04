@@ -1,3 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", serif;
+    min-height: 100vh;
+    background: #121212;
+    /* خلفية داكنة */
+    color: #E5E5E5;
+    /* لون نص أبيض ناعم */
+}
+
+
+
 .product-detail-section {
     background-color: #121212;
     color: #E5E5E5;
