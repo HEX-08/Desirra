@@ -15,109 +15,90 @@ body {
 
 
 
-.product-page {
-    padding: 60px 20px;
-    background: #121212;
-    color: #E5E5E5;
-    font-family: 'Jost', sans-serif;
-}
-
-.product-wrapper {
+.product-3d {
+    background-color: #121212;
+    padding: 80px 20px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 40px;
-    max-width: 1100px;
+    align-items: center;
+}
+
+.product-3d-container {
+    text-align: center;
+    max-width: 600px;
     margin: auto;
+    position: relative;
 }
 
-.product-img {
-    flex: 1 1 320px;
-    max-width: 400px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 20px #00CFFF66;
-    background: #1a1a1a;
-    padding: 16px;
-}
-
-.product-img img {
-    width: 100%;
+.product-3d-container img {
+    width: 320px;
     height: auto;
     object-fit: contain;
+    transform: rotateX(12deg) rotateY(-12deg);
+    box-shadow:
+        0 25px 50px rgba(0, 207, 255, 0.4),
+        0 8px 16px rgba(0, 207, 255, 0.2);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border-radius: 20px;
 }
 
-.product-details {
-    flex: 1 1 350px;
-    max-width: 500px;
+.product-3d-container img:hover {
+    transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+    box-shadow:
+        0 40px 60px rgba(0, 207, 255, 0.5),
+        0 10px 30px rgba(0, 207, 255, 0.3);
 }
 
-.product-details h1 {
-    font-size: 2.4rem;
-    font-family: 'Libertinus Serif', serif;
+.product-title {
+    margin-top: 30px;
+    font-size: 2.2rem;
     color: #00CFFF;
-    margin-bottom: 18px;
-    text-shadow: 0 0 10px #00CFFF;
+    font-family: 'Libertinus Serif', serif;
+    text-shadow: 0 0 10px #00CFFF88;
     font-style: italic;
 }
 
-.product-details .desc {
-    font-size: 1.05rem;
-    line-height: 1.7;
+.product-desc {
+    margin: 16px auto 28px;
     color: #b0b0b0;
-    margin-bottom: 18px;
+    font-size: 1.05rem;
+    max-width: 450px;
+    line-height: 1.7;
 }
 
-.features {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 28px;
-}
-
-.features li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.btn-action {
+.btn-contact {
     display: inline-block;
     background: #00CFFF;
     color: #121212;
-    font-weight: bold;
-    padding: 10px 26px;
+    padding: 12px 28px;
+    font-size: 1rem;
     border-radius: 30px;
     text-decoration: none;
-    box-shadow: 0 0 14px #00CFFFaa;
+    box-shadow: 0 0 18px #00CFFFaa;
     transition: 0.3s ease;
 }
 
-.btn-action:hover {
+.btn-contact:hover {
     background: #0099bb;
-    box-shadow: 0 0 20px #0099bbcc;
+    box-shadow: 0 0 26px #0099bbcc;
 }
 
-/* ✅ Responsive for phones */
-@media (max-width: 768px) {
-    .product-wrapper {
-        flex-direction: column;
-        text-align: center;
+/* ✅ Responsive */
+@media (max-width: 600px) {
+    .product-3d-container img {
+        width: 240px;
     }
 
-    .product-details h1 {
-        font-size: 2rem;
+    .product-title {
+        font-size: 1.8rem;
     }
 
-    .product-details .desc {
-        font-size: 1rem;
-    }
-
-    .features li {
+    .product-desc {
         font-size: 0.95rem;
     }
 
-    .btn-action {
-        padding: 9px 22px;
-        font-size: 0.95rem;
+    .btn-contact {
+        font-size: 0.9rem;
+        padding: 10px 24px;
     }
 }
