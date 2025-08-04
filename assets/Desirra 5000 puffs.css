@@ -179,3 +179,101 @@ body {
 
 
 
+.product-detail {
+    background: #121212;
+    padding: 80px 20px;
+    color: #E5E5E5;
+    font-family: "Jost", sans-serif;
+}
+
+.product-detail-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.product-image img {
+    width: 320px;
+    border-radius: 20px;
+    filter: drop-shadow(0 30px 60px rgba(0, 207, 255, 0.25));
+    transform: rotateX(10deg) rotateY(-10deg);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.product-image img:hover {
+    transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+    filter: drop-shadow(0 40px 80px rgba(0, 207, 255, 0.35));
+}
+
+.product-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-title {
+    font-family: 'Libertinus Serif', serif;
+    font-size: 2.6rem;
+    color: #00CFFF;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px #00CFFF99;
+    font-style: italic;
+}
+
+.product-desc {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #B0B0B0;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.flavor-info h4 {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+}
+
+.nic-levels span {
+    display: inline-block;
+    background: #00CFFF;
+    color: #121212;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    box-shadow: 0 0 10px #00CFFF88;
+    transition: 0.3s ease;
+}
+
+.nic-levels span:hover {
+    background: #0099bb;
+    box-shadow: 0 0 18px #0099bbcc;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+    .product-detail-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .product-title {
+        font-size: 2rem;
+    }
+
+    .product-desc {
+        font-size: 1rem;
+    }
+
+    .nic-levels span {
+        margin-bottom: 10px;
+    }
+}
